@@ -24,6 +24,7 @@ jobs:
           ls -la
           ls -la .git
           cat .git/config
+          git config --global --add safe.directory /__w/release-test/release-test
           git remote
       - name: Semantic Release
         run: semantic-release
