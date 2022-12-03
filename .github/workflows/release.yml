@@ -19,6 +19,10 @@ jobs:
       - name: Checkout files
         uses: actions/checkout@v3
       - name: list directory
-        run: ls -la
+        run: |
+          ls -la
+          ls -la .git
+          cat .git/config
+          git remote
       - name: Semantic Release
-        run: pwd; semantic-release
+        run: semantic-release
