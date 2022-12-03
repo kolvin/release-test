@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/kolvin/release-test/compare/v1.0.2...v1.0.3) (2022-12-03)
+
+
+### Bug Fixes
+
+* **ci:** set job name ([76a8e60](https://github.com/kolvin/release-test/commit/76a8e6040e87e29e1f742b03391887e31eee4e78))
+
 ## [1.0.2](https://github.com/kolvin/release-test/compare/v1.0.1...v1.0.2) (2022-12-03)
 
 
