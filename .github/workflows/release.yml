@@ -21,4 +21,4 @@ jobs:
       - name: list directory
         run: ls -la
       - name: Semantic Release
-        run: semantic-release
+        run: pwd; semantic-release
