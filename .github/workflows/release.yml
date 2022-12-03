@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: Checkout files
         uses: actions/checkout@v3
-      - name: 
+      - name: Git workaround for actions/runner#2033
         run: git config --global --add safe.directory $GITHUB_WORKSPACE
       - name: Semantic Release
         run: semantic-release
