@@ -1,0 +1,21 @@
+name: Release
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  release-job:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/kolvin/semantic-release:main
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: list directory
+        run: ls -la
+      - name: Semantic Release
+        run: semantic-release
