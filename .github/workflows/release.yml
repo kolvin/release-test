@@ -18,6 +18,6 @@ jobs:
         run: git config --global --add safe.directory $GITHUB_WORKSPACE
       - name: Release
         id: release
-        uses: actions/semantic-release-docker-action@v1
+        uses: kloud-cnf/semantic-release-docker-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
