@@ -14,8 +14,6 @@ jobs:
     steps:
       - name: Checkout files
         uses: actions/checkout@v3
-      - name: Git workaround for actions/runner#2033
-        run: git config --global --add safe.directory $GITHUB_WORKSPACE
       - name: Release
         id: release
         uses: kloud-cnf/semantic-release-docker-action@v1.0.2
