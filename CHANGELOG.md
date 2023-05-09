@@ -1,3 +1,14 @@
+## [1.0.4](https://github.com/kolvin/release-test/compare/v1.0.3...v1.0.4) (2023-05-09)
+
+
+### Bug Fixes
+
+* test image on CI job ([9f4eced](https://github.com/kolvin/release-test/commit/9f4eced7fc369567e238b09269f7202c7530c058))
+* test image on CI job ([c643bf3](https://github.com/kolvin/release-test/commit/c643bf3c066054cc20b877f6e63bc0a8fdb615ea))
+* test image on CI job ([404a15f](https://github.com/kolvin/release-test/commit/404a15f79f2ea7d1c434f2ad02d14f9c7eab11f8))
+* test image on CI job ([134f2bc](https://github.com/kolvin/release-test/commit/134f2bcb4eacc8644959be76d0f0613e99fde31c))
+* test image on CI job ([4f085cc](https://github.com/kolvin/release-test/commit/4f085ccce100378c6e39ff36e152a765193a5ea1))
+
 ## [1.0.3](https://github.com/kolvin/release-test/compare/v1.0.2...v1.0.3) (2022-12-03)
 
 
