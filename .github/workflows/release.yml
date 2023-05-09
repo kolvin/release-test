@@ -7,17 +7,18 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      issues: write
-      pull-requests: write
+    container:
+      image: ghcr.io/kloud-cnf/semantic-release@0.1.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
     steps:
       - name: Checkout files
         uses: actions/checkout@v3
-      - name: Fix git safe.directory in container
+      - name: Fix git safe.directory in container # -> https://github.com/actions/runner/issues/2033
         run: mkdir -p /home/runner/work/_temp/_github_home && printf "[safe]\n\tdirectory = /github/workspace" > /home/runner/work/_temp/_github_home/.gitconfig
       - name: Release
         id: release
-        uses: kloud-cnf/semantic-release-docker-action@main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          pwd
+          echo $PATH
+          semantic-release
