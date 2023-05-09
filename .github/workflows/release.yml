@@ -7,19 +7,19 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
     container:
       image: ghcr.io/kloud-cnf/semantic-release:0.1.0
       env:
-        GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout files
         uses: actions/checkout@v3
       - name: Configure safe git # -> https://github.com/actions/runner/issues/2033
-        run: |
-          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+        run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - name: Release
         id: release
-        run: |
-          pwd
-          echo $PATH
-          semantic-release
+        run: semantic-release
