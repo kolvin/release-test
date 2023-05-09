@@ -14,8 +14,9 @@ jobs:
     steps:
       - name: Checkout files
         uses: actions/checkout@v3
-      - name: Fix git safe.directory in container # -> https://github.com/actions/runner/issues/2033
-        run: mkdir -p /home/runner/work/_temp/_github_home && printf "[safe]\n\tdirectory = /github/workspace" > /home/runner/work/_temp/_github_home/.gitconfig
+      - name: Configure safe git # -> https://github.com/actions/runner/issues/2033
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - name: Release
         id: release
         run: |
