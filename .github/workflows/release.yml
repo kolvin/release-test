@@ -8,7 +8,7 @@ jobs:
   release:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/kloud-cnf/semantic-release@0.1.0
+      image: ghcr.io/kloud-cnf/semantic-release:0.1.0
       env:
         GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
     steps:
