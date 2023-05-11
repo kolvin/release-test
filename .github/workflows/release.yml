@@ -20,6 +20,7 @@ jobs:
         id: release
         uses: docker://ghcr.io/kloud-cnf/semantic-release:pr-8
         with:
+          options: -v ${{ github.workspace }}:$GITHUB_WORKSPACE
           args: --dry-run
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
