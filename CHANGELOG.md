@@ -1,3 +1,14 @@
+## [1.0.5](https://github.com/kolvin/release-test/compare/v1.0.4...v1.0.5) (2023-05-11)
+
+
+### Bug Fixes
+
+* **ci:** use beta image ([75420e4](https://github.com/kolvin/release-test/commit/75420e4881ee7ec3e7134ca6c9c529f5d6751c9e))
+* **ci:** use beta image ([eccc17c](https://github.com/kolvin/release-test/commit/eccc17c28e11bec2ac722c1f51fbe5d3b528608b))
+* **ci:** use beta image ([1886fb6](https://github.com/kolvin/release-test/commit/1886fb61c8656d6082ad0bf6f8dbe1731b88e2fc))
+* **ci:** use beta image ([934435e](https://github.com/kolvin/release-test/commit/934435e0c7126b3263d60c96dc4a7d54ba9e1291))
+* **ci:** use beta image ([d7867ff](https://github.com/kolvin/release-test/commit/d7867ff00911b11e7d2f675165a50b94064645fa))
+
 ## [1.0.4](https://github.com/kolvin/release-test/compare/v1.0.3...v1.0.4) (2023-05-09)
 
 
