@@ -18,7 +18,7 @@ jobs:
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - name: Release
         id: release
-        uses: ghcr.io/kloud-cnf/semantic-release:pr-8
+        uses: docker://ghcr.io/kloud-cnf/semantic-release:pr-8
         with:
           args: semantic-release --dry-run
         env:
