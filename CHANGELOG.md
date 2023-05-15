@@ -1,3 +1,10 @@
+## [1.0.10](https://github.com/kolvin/release-test/compare/v1.0.9...v1.0.10) (2023-05-15)
+
+
+### Bug Fixes
+
+* **ci:** set gpg2 progam in git ([4d222fa](https://github.com/kolvin/release-test/commit/4d222fa38dc07af365874312ab88c4d1a1d6b49c))
+
 ## [1.0.9](https://github.com/kolvin/release-test/compare/v1.0.8...v1.0.9) (2023-05-15)
 
 
