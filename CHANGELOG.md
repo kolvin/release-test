@@ -1,3 +1,11 @@
+## [1.0.6](https://github.com/kolvin/release-test/compare/v1.0.5...v1.0.6) (2023-05-15)
+
+
+### Bug Fixes
+
+* **ci:** test gpg logic ([2e26b20](https://github.com/kolvin/release-test/commit/2e26b20e60d7ac8ea323103464a6e6b994835944))
+* **ci:** use beta image ([0bf0048](https://github.com/kolvin/release-test/commit/0bf0048ae86673751862262a50ce342ba54746b0))
+
 ## [1.0.5](https://github.com/kolvin/release-test/compare/v1.0.4...v1.0.5) (2023-05-11)
 
 
