@@ -38,4 +38,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
         with:
-          args: whoami
+          args: ls -la
+          options: -w test -v ${{ github.workspace }}:/test
