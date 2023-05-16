@@ -14,8 +14,6 @@ jobs:
     steps:
       - name: Checkout files
         uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.BOT_TOKEN }}
       - name: Configure safe git # -> https://github.com/actions/runner/issues/2033
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - name: Import GPG key
