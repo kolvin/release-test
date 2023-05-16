@@ -15,7 +15,7 @@ jobs:
       - name: Checkout files
         uses: actions/checkout@v3
       - name: Configure safe git # -> https://github.com/actions/runner/issues/2033
-        run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+        run: git config --add safe.directory "$GITHUB_WORKSPACE"
       - name: Import GPG key
         id: import-gpg
         uses: crazy-max/ghaction-import-gpg@v5
@@ -39,7 +39,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
         with:
           image: ghcr.io/kloud-cnf/semantic-release:sha-8fd06b5926cfa866c7062f2016dd6ceac761c5b2
-          options: -w /test -v ${{ github.workspace }}:/test
+          options: -v ${{ github.workspace }}:/github/workspace
           run: |
             ls -la
             cat .git/config
