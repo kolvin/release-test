@@ -32,9 +32,8 @@ jobs:
         run: echo $GPG_AGENT_INFO
       - name: Release
         id: release
-        uses: docker://ghcr.io/kloud-cnf/semantic-release:0.1.3
+        uses: docker://ghcr.io/kloud-cnf/semantic-release:sha-8fd06b5926cfa866c7062f2016dd6ceac761c5b2
         env:
           GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
         with:
-          args: gpg -k
-          options: -v $GPG_AGENT_INFO:$GPG_AGENT_INFO
+          args: "gpg -k"
