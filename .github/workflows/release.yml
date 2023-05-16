@@ -38,3 +38,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
         with:
           args: semantic-release --debug
+          options: --volume /run/user/1001/gnupg/S.gpg-agent.extra:/gpg-agent
