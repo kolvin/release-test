@@ -36,5 +36,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
         with:
-          entrypoint: "/bin/sh"
+          entrypoint: /bin/sh
           args: "gpg -k"
